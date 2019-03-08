@@ -139,7 +139,7 @@ return [
         'local' => [
             'supervisor-1' => [
                 'connection' => 'redis',
-                'queue' => ['default'],
+                'queue' => ['default', 'queue', 'emails'],
                 'balance' => 'simple',
                 'processes' => 3,
                 'tries' => 3,

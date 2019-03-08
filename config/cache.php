@@ -73,7 +73,12 @@ return [
 
         'redis' => [
             'driver' => 'redis',
-            'connection' => 'cache',
+            'connection' => 'default',
+        ],
+
+        'queue' => [
+            'driver' => 'redis',
+            'connection' => 'queue',
         ],
 
         'dynamodb' => [

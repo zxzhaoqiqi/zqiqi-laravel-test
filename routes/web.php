@@ -14,3 +14,9 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::namespace('Test')->prefix('test')->group(function () {
+
+    Route::get('job-queue', 'JobController@index');
+
+});
